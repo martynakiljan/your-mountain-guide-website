@@ -1,0 +1,134 @@
+@import './mixins';
+@import './variables';
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 200px;
+}
+
+.app {
+	position: relative;
+
+	line-height: 1.5;
+	overflow-x: hidden;
+
+	@include md-max {
+		overflow-x: hidden;
+	}
+}
+
+h2,
+h3 {
+	font-weight: 300;
+}
+
+body {
+	background-color: $color-bg;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 200;
+	font-style: normal;
+	font-style: normal;
+	font-size: 12px;
+	overflow-x: hidden;
+	color: $color-main;
+	line-height: 1.2;
+
+	@include md-min {
+		font-size: 16px;
+	}
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	text-size-adjust: none;
+}
+
+li {
+	list-style-type: none;
+	list-style: none;
+}
+
+input {
+	border-radius: 0;
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+	display: block;
+	height: 100%;
+}
+
+a {
+	color: unset;
+}
+
+.section__inner {
+	max-width: 1200px;
+	padding: 100px 50px;
+}

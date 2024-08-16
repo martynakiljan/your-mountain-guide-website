@@ -1,0 +1,12 @@
+.big-title__title {
+	@include md-min {
+		font-size: 70px;
+	}
+}
+
+.big-title__img {
+	object-fit: cover;
+	max-width: 100%;
+	margin: 0 auto;
+	width: auto;
+}
