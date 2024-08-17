@@ -6,6 +6,10 @@ import About from './components/About'
 import Grid from './components/Grid'
 import BigTitle from './components/BigTitle'
 import Expeditions from './components/Expeditions'
+import SmallGrid from './components/SmallGrid'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
+import Reviews from './components/Reviews'
 
 function App() {
 	return (
@@ -18,6 +22,10 @@ function App() {
 					<Grid />
 					<BigTitle />
 					<Expeditions />
+					<SmallGrid />
+					<Reviews />
+					<Contact />
+					<Footer />
 				</div>
 			</div>
 		</>

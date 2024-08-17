@@ -1,0 +1,120 @@
+.contact-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 20px;
+
+	@include md-min {
+		flex-direction: row;
+		gap: 50px;
+	}
+}
+
+form {
+	@include md-max {
+		padding: 50px 0;
+	}
+}
+
+.contact-form,
+.contact-info {
+	flex: 1;
+
+	box-sizing: border-box;
+
+	@include md-min {
+		margin: 0 10px;
+	}
+}
+
+.contact-form {
+	width: 100%;
+
+	@include md-min {
+		max-width: 600px;
+	}
+}
+
+.contact-form h2 {
+	margin-top: 0;
+}
+
+.form-group {
+	margin-bottom: 15px;
+	background-color: $color-bg;
+	border: none;
+}
+
+.form-group label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+	font-family: 'Playfair Display', serif;
+	width: 100%;
+	padding: 10px 0;
+	box-sizing: border-box;
+	border: none;
+	background-color: $color-bg;
+	border-bottom: 1px solid $color-main;
+	color: #8b8b8b;
+}
+
+.form-group textarea {
+	height: 150px;
+	resize: vertical; /* Allows vertical resizing */
+
+	@include md-max {
+		height: 100px;
+	}
+}
+
+.error-message {
+	color: #bd6262;
+	font-size: 0.6rem;
+	padding-top: 5px;
+}
+
+button {
+	padding: 10px 20px;
+	border: 1px solid $color-main;
+	border-radius: 5px;
+	background-color: $color-main;
+	color: $color-bg;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: $color-bg;
+	color: $color-main;
+	border-radius: 5px;
+
+	.form & {
+		border: 1px solid $color-main;
+	}
+}
+
+.contact-info h2 {
+	margin-top: 0;
+}
+
+.contact-info p {
+	margin: 10px 0;
+}
+
+.social-contact {
+	width: 30%;
+	margin-top: 30px;
+}
+
+.social__icon {
+	&:hover {
+		svg {
+			color: $color-main;
+		}
+	}
+}
