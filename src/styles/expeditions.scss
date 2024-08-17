@@ -1,9 +1,20 @@
+.expedition__inner {
+	padding: 0 20px;
+}
+
+.expedition__titles {
+	padding: 50px 0px;
+}
+
 .expedtion__tile {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
-	padding: 50px 0;
+
+	@include md-min {
+		padding: 50px 0;
+	}
 }
 
 .expedition__tiles {
@@ -27,7 +38,11 @@
 
 .expedtion__tile--title {
 	font-size: 20px;
+	font-weight: 300;
 }
 .expedtion__tile--text {
-	padding: 21px 0;
+	padding: 6px 0;
+	@include md-min {
+		padding: 21px 0;
+	}
 }

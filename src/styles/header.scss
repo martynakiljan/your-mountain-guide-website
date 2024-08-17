@@ -4,6 +4,11 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: 0 20px;
+
+	@include md-min {
+		padding: 0;
+	}
 }
 
 .header__inner {
@@ -16,11 +21,29 @@
 .header__title {
 	text-transform: uppercase;
 	letter-spacing: 20px;
-	font-size: 100px;
+	font-size: 40px;
+
+	@include sm-min {
+		font-size: 100px;
+	}
+
+
+	@include lg-min {
+		font-size: 150px;
+	}
 }
 
 .header__titles {
 	padding: 50px 0;
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	@include md-min {
+		height: 50vh;
+	}
 }
 
 .header__subtitle {
@@ -33,7 +56,7 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 100vw;
-	min-height: 70vh;
+	height: 60vh;
 	background-position: center;
 
 	&::before {

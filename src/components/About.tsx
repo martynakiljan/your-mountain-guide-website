@@ -1,8 +1,8 @@
 
 const About = () => {
 	return (
-		<div className='about section section__inner' id='about'>
-			<div className='about__inner'>
+		<div className='about section' id='about'>
+			<div className='about__inner reduced-width'>
 				<div className='about__columns'>
 					<div className='about__col about__col--left'>
 						<h2 className='about__title'>passion </h2>

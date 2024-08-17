@@ -31,7 +31,6 @@ h3 {
 body {
 	background-color: $color-bg;
 	font-family: 'Poppins', sans-serif;
-	font-weight: 200;
 	font-style: normal;
 	font-style: normal;
 	font-size: 12px;
@@ -128,7 +127,22 @@ a {
 	color: unset;
 }
 
-.section__inner {
-	max-width: 1200px;
-	padding: 100px 50px;
+.reduced-width {
+	padding: 0 20px;
+	@include lg-min {
+		max-width: 1500px;
+		margin: 0 auto;
+	}
+}
+
+.title-section {
+	font-size: 25px;
+
+	@include md-min {
+		font-size: 35px;
+	}
+
+	@include xl-min {
+		font-size: 45px;
+	}
 }

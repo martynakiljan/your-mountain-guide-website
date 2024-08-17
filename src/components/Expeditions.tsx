@@ -1,15 +1,17 @@
 const Expeditions = () => {
 	return (
-		<div className='expedition'>
-			<div className='expedition__inner section__inner'>
-				<h2 className='expedition__title'>Explore the Majestic Mountains with a Certified Mountain Guide</h2>
-				<p className='expedition__text'>
-					Are you ready to embark on an unforgettable adventure? As a certified mountain guide with years of experience,
-					I offer a range of guided mountain tours tailored to your skill level and interests. Whether you're an
-					experienced hiker looking for a challenging trek or a beginner eager to explore the beauty of the mountains, I
-					can provide a safe and enjoyable experience.
-				</p>
-				<h3 className='expedition__title'>What I Offer:</h3>
+		<div className='expedition' id="expeditions">
+			<div className='expedition__inner'>
+				<div className='expedition__titles reduced-width'>
+					<h2 className='expedition__title title-section'>Explore the Majestic Mountains with a Certified Mountain Guide</h2>
+					<p className='expedition__text'>
+						Are you ready to embark on an unforgettable adventure? As a certified mountain guide with years of
+						experience, I offer a range of guided mountain tours tailored to your skill level and interests. Whether
+						you're an experienced hiker looking for a challenging trek or a beginner eager to explore the beauty of the
+						mountains, I can provide a safe and enjoyable experience.
+					</p>
+					<h3 className='expedition__title title-section'>What I Offer:</h3>
+				</div>
 
 				<div className='expedition__tiles'>
 					<div className='expedtion__tile'>

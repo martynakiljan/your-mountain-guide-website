@@ -1,12 +1,8 @@
 .footer {
-	border-top: 2px solid $color-main;
-	padding: 25px 0;
+	border-top: 1px dotted $color-main;
+	padding: 25px 20px;
 	padding-bottom: 0;
 	margin-top: 50px;
-
-	@include md-min {
-		padding-top: 50px;
-	}
 
 	svg {
 		width: 200px;
@@ -57,13 +53,12 @@
 }
 
 .footer__bottom--copy {
-	padding: 10px 0;
+
 	margin-top: 30px;
 	text-align: center;
 
 	@include md-min {
 		padding-top: 50px;
-		padding-bottom: 20px;
 	}
 }
 

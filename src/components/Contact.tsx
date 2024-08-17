@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faInstagram, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+
 import ClipLoader from 'react-spinners/ClipLoader'
 
 const Contact = () => {
@@ -29,15 +28,15 @@ const Contact = () => {
 	}
 
 	return (
-		<div className='contact-container'>
-			<div className='contact-form'>
-				<h2 className='title'>Contact Us</h2>
+		<div className='contact-container reduced-width'>
+			<div className='contact-form '>
+				<h2 className='contact-form__title title-section'>Contact me</h2>
 				{isSubmitted ? (
 					<p className='thank-you-message'>Thank you. We will contact you soon!</p>
 				) : (
 					<form onSubmit={handleSubmit(onSubmit)}>
 						<div className='form-group'>
-							<label htmlFor='name'>Name</label>
+							<label htmlFor='name'>Your Name</label>
 							<input id='name' type='text' {...register('name', { required: 'Name is required' })} />
 							{errors.name && <p className='error-message'>{errors.name.message}</p>}
 						</div>
@@ -56,32 +55,11 @@ const Contact = () => {
 							<ClipLoader color='#242527' size={24} />
 						) : (
 							<button type='submit' disabled={isSubmitting}>
-								Send
+								Send this message!
 							</button>
 						)}
 					</form>
 				)}
-			</div>
-			<div className='contact-info'>
-				<h2 className='title'>Con</h2>
-				<h2 className='title'>tact</h2>
-				<p>
-					<strong>Phone:</strong> +41 234 344 456
-				</p>
-				<p>
-					<strong>Address:</strong> Bahnhofstrasse 54 Zürich
-				</p>
-				<div className='social social-contact'>
-					<a className='social__icon' href='https://www.instagram.com/'>
-						<FontAwesomeIcon icon={faInstagram} />
-					</a>
-					<a className='social__icon' href='https://www.facebook.com/'>
-						<FontAwesomeIcon icon={faFacebook} />
-					</a>
-					<a className='social__icon' href='https://www.linkedin.com/'>
-						<FontAwesomeIcon icon={faLinkedin} />
-					</a>
-				</div>
 			</div>
 		</div>
 	)

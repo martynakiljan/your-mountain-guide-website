@@ -15,18 +15,16 @@ function App() {
 	return (
 		<>
 			<div className='app'>
-				<div className='app-wrapper'>
-					<Menu />
-					<Header />
-					<About />
-					<Grid />
-					<BigTitle />
-					<Expeditions />
-					<SmallGrid />
-					<Reviews />
-					<Contact />
-					<Footer />
-				</div>
+				<Menu />
+				<Header />
+				<About />
+				<Grid />
+				<BigTitle />
+				<Expeditions />
+				<SmallGrid />
+				<Reviews />
+				<Contact />
+				<Footer />
 			</div>
 		</>
 	)

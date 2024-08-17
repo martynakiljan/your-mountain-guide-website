@@ -1,6 +1,18 @@
+.big-title__inner {
+	padding: 50px 20px;
+
+	@include md-min {
+		padding: 100px 0;
+	}
+}
+
 .big-title__title {
+	font-size: 40px;
+	letter-spacing: 5px;
+
 	@include md-min {
 		font-size: 70px;
+		text-align: center;
 	}
 }
 
@@ -8,5 +20,5 @@
 	object-fit: cover;
 	max-width: 100%;
 	margin: 0 auto;
-	width: auto;
+	height: 50vh;
 }
