@@ -8,6 +8,10 @@
 	right: 0;
 	width: 100%;
 	padding: 0 20px;
+
+	@include lg-min {
+		max-width: 1000px;
+	}
 }
 
 .menu-desktop__inner {
@@ -60,7 +64,7 @@
 	text-decoration: none;
 
 	@include md-max {
-		font-size: 24px;
+		font-size: 18px;
 	}
 
 	&:hover {

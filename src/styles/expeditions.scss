@@ -3,7 +3,7 @@
 }
 
 .expedition__titles {
-	padding: 50px 0px;
+	padding-top: 50px;
 }
 
 .expedtion__tile {
@@ -11,9 +11,11 @@
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
+}
 
+.expedition__text {
 	@include md-min {
-		padding: 50px 0;
+		width: 70%;
 	}
 }
 
@@ -31,18 +33,22 @@
 }
 
 .expedtion__num {
-	padding-right: 20px;
 	font-size: 100px;
 	font-family: 'Dancing Script', cursive;
+	min-width: 80px;
 }
 
 .expedtion__tile--title {
 	font-size: 20px;
 	font-weight: 300;
 }
-.expedtion__tile--text {
-	padding: 6px 0;
-	@include md-min {
-		padding: 21px 0;
-	}
+
+.expedition__img {
+	background-image: url(../assets//images/mountains/mountain-11.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100vw;
+	height: 80vh;
+	background-position: center;
+	margin: 50px 0;
 }

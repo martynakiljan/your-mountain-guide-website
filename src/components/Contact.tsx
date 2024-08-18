@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faInstagram, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import ClipLoader from 'react-spinners/ClipLoader'
 
 const Contact = () => {
@@ -37,18 +38,26 @@ const Contact = () => {
 					<form onSubmit={handleSubmit(onSubmit)}>
 						<div className='form-group'>
 							<label htmlFor='name'>Your Name</label>
-							<input id='name' type='text' {...register('name', { required: 'Name is required' })} />
+							<input id='name' type='text' placeholder='Kate' {...register('name', { required: 'Name is required' })} />
 							{errors.name && <p className='error-message'>{errors.name.message}</p>}
 						</div>
 
 						<div className='form-group'>
 							<label htmlFor='email'>Email</label>
-							<input id='email' type='email' {...register('email', { required: 'Email is required' })} />
+							<input
+								id='email'
+								type='email'
+								placeholder='kate345@gmail.com'
+								{...register('email', { required: 'Email is required' })}
+							/>
 							{errors.email && <p className='error-message'>{errors.email.message}</p>}
 						</div>
 						<div className='form-group'>
 							<label htmlFor='message'>Message</label>
-							<textarea id='message' {...register('message', { required: 'Message is required' })}></textarea>
+							<textarea
+								id='message'
+								placeholder='I am interested in a high altitude course with my husband. Can I ask for more information?'
+								{...register('message', { required: 'Message is required' })}></textarea>
 							{errors.message && <p className='error-message'>{errors.message.message}</p>}
 						</div>
 						{isSubmitting ? (
@@ -60,6 +69,37 @@ const Contact = () => {
 						)}
 					</form>
 				)}
+			</div>
+
+			<div>
+				<div className='contact__bottom'>
+					<div className='contact__col'>
+						<p className='contact__title '>Contact</p>
+						<p className='contact__tel'>+41 546 345 345</p>
+						<a className='contact__email' href='mailto:tom@your-guide.com'>
+							tom@your-guide.com
+						</a>
+					</div>
+					<div className='contact__col'>
+						<p className='contact__title'>Location</p>
+						<p className='contact__street'>wherever you want!</p>
+						<p className='contact__city'> every mountain.</p>
+					</div>
+					<div className='contact__col'>
+						<p className='contact__title'>Social</p>
+						<div className='social'>
+							<a className='social__icon' href='https://www.instagram.com/'>
+								<FontAwesomeIcon icon={faInstagram} />
+							</a>
+							<a className='social__icon' href='https://www.facebook.com/'>
+								<FontAwesomeIcon icon={faFacebook} />
+							</a>
+							<a className='social__icon' href='https://www.linkedin.com/'>
+								<FontAwesomeIcon icon={faLinkedin} />
+							</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	)
