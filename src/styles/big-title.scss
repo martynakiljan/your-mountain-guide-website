@@ -1,5 +1,5 @@
 .big-title__inner {
-	padding: 50px 20px;
+	padding: 30px 20px;
 
 	@include md-min {
 		padding: 100px 0;
@@ -8,7 +8,7 @@
 
 .big-title__title {
 	font-size: 40px;
-	letter-spacing: 5px;
+	letter-spacing: 3px;
 
 	@include md-min {
 		font-size: 70px;

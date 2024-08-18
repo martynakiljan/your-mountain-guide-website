@@ -5,6 +5,7 @@
 	justify-content: center;
 	align-items: center;
 	padding: 0 20px;
+	position: relative;
 
 	@include md-min {
 		padding: 0;
@@ -27,7 +28,6 @@
 		font-size: 100px;
 	}
 
-
 	@include lg-min {
 		font-size: 150px;
 	}
@@ -48,6 +48,7 @@
 
 .header__subtitle {
 	font-weight: 200;
+	letter-spacing: 3px;
 }
 
 .header__img {

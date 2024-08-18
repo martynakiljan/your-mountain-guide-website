@@ -31,7 +31,7 @@ const Contact = () => {
 	return (
 		<div className='contact-container reduced-width'>
 			<div className='contact-form '>
-				<h2 className='contact-form__title title-section'>Contact me</h2>
+				<h2 className='contact-form__title title-section'>-Contact me-</h2>
 				{isSubmitted ? (
 					<p className='thank-you-message'>Thank you. We will contact you soon!</p>
 				) : (

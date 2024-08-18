@@ -15,7 +15,7 @@ const Expeditions = () => {
 					<h3 className='expedition__title title-section'>What I Offer:</h3>
 				</div>
 
-				<div className='expedition__tiles'>
+				<div className='expedition__tiles reduced-width'>
 					<div className='expedtion__tile'>
 						<div className='expedtion__num'>1</div>
 						<div className='expedtion__text'>

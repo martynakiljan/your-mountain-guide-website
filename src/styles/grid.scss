@@ -2,13 +2,17 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 20px;
+	margin: 50px 20px;
 
 	&__inner {
 		display: grid;
 		grid-template-columns: repeat(6, 1fr);
-		grid-template-rows: repeat(3, 150px);
-		gap: 10px;
+		grid-template-rows: repeat(3, 100px);
+		gap: 5px;
+
+		@include sm-min {
+			grid-template-rows: repeat(3, 150px);
+		}
 
 		@include md-min {
 			grid-template-rows: repeat(3, 250px);

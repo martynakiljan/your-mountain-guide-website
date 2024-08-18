@@ -12,7 +12,7 @@ const Review: React.FC<ReviewProps> = ({ src, name, review, date }) => {
 		<div className='review'>
 			<div className='review__columns'>
 				<div className='review__col review__col--img'>
-					<img className='review__img--img' src={src} alt={name} />
+					<div className='review__col review__col--image' style={{ backgroundImage: `url(${src})` }}></div>
 				</div>
 				<div className='review__col review__col--text'>
 					<h4 className='review__name'>{name}</h4>

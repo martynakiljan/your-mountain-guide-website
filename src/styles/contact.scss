@@ -33,8 +33,13 @@ form {
 }
 
 .contact-form__title {
-	padding: 50px 0;
+	padding: 20px 0;
 	text-align: center;
+	letter-spacing: 3px;
+
+	@include md-min {
+		padding: 50px 0;
+	}
 }
 
 .form-group {
@@ -149,6 +154,7 @@ button:hover {
 .contact__title {
 	padding-bottom: 20px;
 	font-size: 18px;
+	letter-spacing: 3px;
 }
 
 .contact__tel,

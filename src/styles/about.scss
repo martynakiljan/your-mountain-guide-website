@@ -1,5 +1,4 @@
 .about {
-	background-color: $color-dark;
 	padding: 50px 0;
 
 	@include md-min {
@@ -27,7 +26,7 @@
 
 .about__title {
 	color: $color-main;
-	font-size: 50px;
+	font-size: 30px;
 	font-weight: 500;
 	letter-spacing: 5px;
 
@@ -37,9 +36,17 @@
 }
 
 .about__title--and {
-	font-size: 40px;
+	font-size: 20px;
 	font-style: italic;
 	text-align: center;
+
+	@include md-max {
+		max-width: 40%;
+	}
+
+	@include md-min {
+		font-size: 40px;
+	}
 }
 
 .about__text {
@@ -49,13 +56,16 @@
 }
 
 .about__img {
-	height: 500px;
+	height: 300px;
 	width: 100%;
-	border-radius: 10%;
 	background-position: center;
 	background-size: cover;
 	position: relative;
 	background-image: url(../assets/images/about/about.jpg);
+
+	@include sm-min {
+		height: 500px;
+	}
 
 	&::before {
 		content: '';
@@ -70,6 +80,6 @@
 	}
 
 	@include md-min {
-		height: 800px;
+		height: 600px;
 	}
 }
