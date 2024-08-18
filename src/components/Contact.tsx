@@ -35,7 +35,7 @@ const Contact: React.FC = () => {
 	}
 
 	return (
-		<div className='contact-container reduced-width'>
+		<div className='contact-container reduced-width' id='contact'>
 			<div className='contact-form '>
 				<h2 className='contact-form__title title-section'>-Contact me-</h2>
 				{isSubmitted ? (

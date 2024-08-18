@@ -87,6 +87,8 @@ button {
 	color: $color-main;
 	background-color: transparent;
 	cursor: pointer;
+	font-weight: 400;
+	margin-top: 20pxs;
 }
 
 button:hover {
@@ -167,7 +169,7 @@ button:hover {
 
 .contact__col {
 	@include md-max {
-		padding-top: 50px;
+		padding-top: 30px;
 	}
 }
 

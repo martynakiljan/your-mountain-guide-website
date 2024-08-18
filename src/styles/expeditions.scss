@@ -3,6 +3,7 @@
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
+	padding: 10px 0;
 }
 
 .expedition__text {
@@ -41,10 +42,14 @@
 }
 
 .expedtion__tile--title {
-	font-size: 20px;
+	font-size: 17px;
 	font-weight: 300;
 	letter-spacing: 3px;
 	padding-bottom: 5px;
+
+	@include md-min {
+		font-size: 20px;
+	}
 }
 
 .expedition__img {
