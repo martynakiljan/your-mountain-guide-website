@@ -1,21 +1,27 @@
 import { useState } from 'react'
-import { useForm } from 'react-hook-form'
+import { useForm, SubmitHandler } from 'react-hook-form'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import ClipLoader from 'react-spinners/ClipLoader'
 
-const Contact = () => {
+interface ContactFormData {
+	name: string
+	email: string
+	message: string
+}
+
+const Contact: React.FC = () => {
 	const {
 		register,
 		handleSubmit,
 		reset,
 		formState: { errors },
-	} = useForm()
+	} = useForm<ContactFormData>()
 
-	const [isSubmitting, setIsSubmitting] = useState(false)
-	const [isSubmitted, setIsSubmitted] = useState(false)
+	const [isSubmitting, setIsSubmitting] = useState<boolean>(false)
+	const [isSubmitted, setIsSubmitted] = useState<boolean>(false)
 
-	const onSubmit = () => {
+	const onSubmit: SubmitHandler<ContactFormData> = () => {
 		setIsSubmitting(true)
 		setTimeout(() => {
 			setIsSubmitting(false)
@@ -83,7 +89,7 @@ const Contact = () => {
 					<div className='contact__col'>
 						<p className='contact__title'>Location</p>
 						<p className='contact__street'>wherever you want!</p>
-						<p className='contact__city'> every mountain.</p>
+						<p className='contact__city'>every mountain.</p>
 					</div>
 					<div className='contact__col'>
 						<p className='contact__title'>Social</p>
