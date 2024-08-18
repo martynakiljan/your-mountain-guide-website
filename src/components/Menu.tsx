@@ -57,11 +57,6 @@ const Menu: React.FC = () => {
 							</a>
 						</li>
 						<li className='menu__item'>
-							<a className='menu__link' href='#works' onClick={e => handleLinkClick(e, 'works')}>
-								works
-							</a>
-						</li>
-						<li className='menu__item'>
 							<a
 								className='menu__link menu__link--contact'
 								href='#contact'
