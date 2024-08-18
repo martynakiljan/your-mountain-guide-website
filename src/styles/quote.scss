@@ -1,0 +1,34 @@
+.quote {
+	padding: 70px 20px;
+
+	@include md-min {
+		padding: 100px 0;
+	}
+}
+
+.quote__inner {
+	width: 100%;
+
+	@include md-min {
+		max-width: 70%;
+		margin: 0 auto;
+	}
+}
+
+.quote__quote {
+	font-size: 30px;
+	text-align: center;
+	letter-spacing: 2px;
+
+	@include md-min {
+		letter-spacing: 3px;
+	}
+}
+
+.quote__author {
+	text-align: right;
+	display: block;
+	font-size: 12px;
+	color: $color-hover;
+	padding-top: 5px;
+}

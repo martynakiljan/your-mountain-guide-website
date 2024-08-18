@@ -9,6 +9,7 @@ import Expeditions from './components/Expeditions'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Reviews from './components/Reviews'
+import Quote from './components/Quote'
 
 function App() {
 	return (
@@ -17,6 +18,7 @@ function App() {
 				<Menu />
 				<Header />
 				<About />
+				<Quote />
 				<Grid />
 				<BigTitle />
 				<Expeditions />

@@ -1,6 +1,7 @@
 .about {
 	@include md-min {
 		padding: 100px 0;
+		padding-bottom: 0;
 	}
 }
 
@@ -10,7 +11,7 @@
 	justify-content: center;
 	align-items: center;
 
-	@include md-min {
+	@include sm-min {
 		flex-direction: row;
 	}
 }

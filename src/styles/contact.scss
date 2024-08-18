@@ -148,9 +148,11 @@ button:hover {
 			color: $color-hover;
 		}
 	}
-
-	@include xs-max {
+	@include sm-max {
 		width: 30%;
+	}
+	@include md-max {
+		width: 20%;
 	}
 }
 
