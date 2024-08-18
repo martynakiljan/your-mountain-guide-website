@@ -1,8 +1,7 @@
 
-<h2>WWebsite for a mountain guide/h2>
+<h2>Website for a mountain guide </h2>
 
 -------
-
 
 🔶 Technologies: REACT 
 
