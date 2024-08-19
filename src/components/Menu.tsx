@@ -52,8 +52,9 @@ const Menu: React.FC = () => {
 							</a>
 						</li>
 						<li className='menu__item'>
-							<a className='menu__link' href='#services' onClick={e => handleLinkClick(e, 'services')}>
-								services
+							<a className='menu__link' href='#expeditions'
+							   onClick={e => handleLinkClick(e, 'expeditions')}>
+								expeditions
 							</a>
 						</li>
 						<li className='menu__item'>
@@ -62,7 +63,7 @@ const Menu: React.FC = () => {
 								href='#contact'
 								onClick={e => handleLinkClick(e, 'contact')}>
 								<span className='menu__link--contact--text'> get in touch</span>
-								<FontAwesomeIcon icon={faHandPeace} />
+								<FontAwesomeIcon icon={faHandPeace}/>
 							</a>
 						</li>
 					</ul>
