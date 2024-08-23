@@ -1,12 +1,17 @@
 .grid {
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: start;
 	position: relative;
 	margin: 50px 20px;
+	height: 400vh;
+	padding-bottom: 20vh;
 
 	&__inner {
 		display: grid;
+		position: sticky;
+		overflow: clip;
+		top: 0;
 		grid-template-columns: repeat(6, 1fr);
 		grid-template-rows: repeat(3, 100px);
 		gap: 5px;

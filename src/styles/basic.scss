@@ -14,13 +14,7 @@ html {
 
 .app {
 	position: relative;
-
 	line-height: 1.5;
-	overflow-x: hidden;
-
-	@include md-max {
-		overflow-x: hidden;
-	}
 }
 
 h2,

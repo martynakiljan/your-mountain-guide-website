@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion'
+
 const Expeditions = () => {
 	return (
 		<div className='expedition' id='expeditions'>
@@ -16,7 +18,14 @@ const Expeditions = () => {
 				</div>
 
 				<div className='expedition__tiles reduced-width'>
-					<div className='expedtion__tile'>
+					<motion.div
+						initial={{ opacity: 0, y: -50 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						viewport={{
+							margin: '-150px',
+							once: true,
+						}}
+						className='expedtion__tile'>
 						<div className='expedtion__num'>1</div>
 						<div className='expedtion__text'>
 							<h4 className='expedtion__tile--title'>Customizable Hiking Tours </h4>
@@ -25,8 +34,15 @@ const Expeditions = () => {
 								terrains.
 							</p>
 						</div>
-					</div>
-					<div className='expedtion__tile'>
+					</motion.div>
+					<motion.div
+						initial={{ opacity: 0, y: -50 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						viewport={{
+							margin: '-150px',
+							once: true,
+						}}
+						className='expedtion__tile'>
 						<div className='expedtion__num'>2</div>
 						<div className='expedtion__text'>
 							<h4 className='expedtion__tile--title'>Specialized Expeditions</h4>
@@ -34,8 +50,15 @@ const Expeditions = () => {
 								Winter hiking, sunrise/sunset tours, wildlife observation, and more.
 							</p>
 						</div>
-					</div>
-					<div className='expedtion__tile'>
+					</motion.div>
+					<motion.div
+						initial={{ opacity: 0, y: -50 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						viewport={{
+							margin: '-150px',
+							once: true,
+						}}
+						className='expedtion__tile'>
 						<div className='expedtion__num'>3</div>
 						<div className='expedtion__text'>
 							<h4 className='expedtion__tile--title'>Safety First</h4>
@@ -44,8 +67,15 @@ const Expeditions = () => {
 								travel.
 							</p>
 						</div>
-					</div>
-					<div className='expedtion__tile'>
+					</motion.div>
+					<motion.div
+						initial={{ opacity: 0, y: -50 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						viewport={{
+							margin: '-150px',
+							once: true,
+						}}
+						className='expedtion__tile'>
 						<div className='expedtion__num'>4</div>
 						<div className='expedtion__text'>
 							<h4 className='expedtion__tile--title'>Local Expertise</h4>
@@ -54,7 +84,7 @@ const Expeditions = () => {
 								mountains intimately.
 							</p>
 						</div>
-					</div>
+					</motion.div>
 				</div>
 			</div>
 			<div className='expedition__img'></div>
